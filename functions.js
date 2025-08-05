@@ -10,7 +10,14 @@ theme.colors = {
   gray: '#9a9a9a',
   black: '#171717',
 }
-theme.assetsPath = `http://127.0.0.1:5500/assets`
+
+
+if (window.location.hostname.includes('dracharm.com.br')){
+  theme.assetsPath = "https://cdn.jsdelivr.net/gh/eduvlemes/dra_charm/assets";
+} else {
+  theme.assetsPath = `http://127.0.0.1:5500/assets`
+}
+
 theme.build = {}
 theme.build.header = function() {
   // $(`#cabecalho .superior .acoes-conta`).insertBefore(`.hidden-phone > .carrinho`)
