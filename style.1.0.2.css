@@ -1420,7 +1420,7 @@ html .pagina-inicial .slick-next.slick-arrow::before {
     background: transparent;
 }
 @media screen and (max-width: 767px) {
-
+  
     .pagina-carrinho .acao-editar .botao:not(.grande) {
         width: 100%;
         left: auto;
@@ -1595,16 +1595,16 @@ html .pagina-inicial .slick-next.slick-arrow{
   .banner.mini-banner .modulo{
     width: 100%!important;
   }
-  .cn-carrosel.slick-slider{padding:  0 1rem!important;}
-  .cn-carrosel.slick-slider .slick-arrow{
+  html .cn-carrosel.slick-slider{padding:  0 1rem!important;}
+  html .cn-carrosel.slick-slider .slick-arrow{
     left: 0;
   }
-  .cn-carrosel.slick-slider .slick-arrow:before{
+  html .cn-carrosel.slick-slider .slick-arrow:before{
     font-size: 20px;
     height: 20px;
     width: 20px;
   }
-  .cn-carrosel.slick-slider .slick-arrow.slick-next{
+  html .cn-carrosel.slick-slider .slick-arrow.slick-next{
     left: auto;
     right: 0;
   }
