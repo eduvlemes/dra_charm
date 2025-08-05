@@ -24,7 +24,7 @@ theme.build.header = function() {
   $(`.carrinho > a > i`).remove()
   $(`.carrinho > a`).prepend(`<img class=ico src="${theme.assetsPath}/shopping-cart_7411136.png" alt="Carrinho de Compras">`)
 
-  $(`.apx_header .icon-shopping-cart`).prepend(`<img class=ico src="${theme.assetsPath}/shopping-cart_7411136.png" alt="Carrinho de Compras">`)
+  
 
   $(`<a href="/conta/index" id="c-account"><span>Entre ou<br>cadastre-se</span><img class=ico src="${theme.assetsPath}/user_1077063.png" alt="Minha Conta"></a>`).insertBefore(`.carrinho`);
 
