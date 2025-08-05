@@ -95,6 +95,12 @@ theme.build.productPage = function() {
   $(`#wrapTroque`).prepend(`<img loading="lazy" class="svgTroqueCommerce" src="https://cdn.awsli.com.br/1930/1930166/arquivos/selo-quadrado-novo.png" alt="A melhor plataforma de trocas e devoluções para Trocas" title="A melhor plataforma de trocas e devoluções para E-Commerce">`);
   });
   $(`.cep button`).text(`Calcular`);
+
+  $('.produto-thumbs img').each(function(){
+      let crop = $(this).attr('src').split('/')[3];
+      let removeCrop = $(this).attr('src').replace(crop,'150x150');
+      $(this).attr('src',removeCrop);
+  });
 };
 
 theme.build.topBar = function(fundo, cor, html){

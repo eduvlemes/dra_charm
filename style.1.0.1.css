@@ -381,7 +381,7 @@ body .listagem .titulo,
   margin: 0;
   padding: 0 1rem;
 }
-.pagina-inicial .slick-prev.slick-arrow{
+html .pagina-inicial .slick-prev.slick-arrow{
   left: -40px;
 }
 
@@ -1396,8 +1396,8 @@ body{overflow-x: hidden;}
     
 }
 
-.pagina-inicial .slick-arrow{line-height: initial;}
-.pagina-inicial .slick-prev.slick-arrow::before {
+html .pagina-inicial .slick-arrow{line-height: initial;}
+html .pagina-inicial .slick-prev.slick-arrow::before {
     content: "\f053"!important;
     display: block;
     width: 40px;
@@ -1408,7 +1408,7 @@ body{overflow-x: hidden;}
     text-align: center;
     background: transparent;
 }
-.pagina-inicial .slick-next.slick-arrow::before {
+html .pagina-inicial .slick-next.slick-arrow::before {
     content: "\f054"!important;
     display: block;
     width: 40px;
@@ -1570,7 +1570,7 @@ body{overflow-x: hidden;}
 
 }
 
-.pagina-inicial .slick-next.slick-arrow{
+html .pagina-inicial .slick-next.slick-arrow{
 
 }
 .top-bar{
