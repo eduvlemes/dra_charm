@@ -93,7 +93,7 @@ input,button,select,textarea,
     gap: 5px;
 }
 #c-account span{
-  color: var(--secondary);
+  color: var(--primary);
   text-align: right;
   font-weight: bold;
   font-size: 14px;
@@ -247,7 +247,7 @@ input,button,select,textarea,
     color: var(--black);
     font-weight: bold;
     line-height: initial;
-    font-size: 14px;
+    font-size: 16px;
 }
 .menu.superior .nivel-dois > li.com-filho > a > i{display: none;}
 .menu.superior .nivel-dois > li.com-filho > ul.nivel-tres{
@@ -336,7 +336,7 @@ body .listagem .listagem-item:hover *{text-decoration: none;}
 
 .cn-divVideo .imagem-produto,
 body .listagem .listagem-item .imagem-produto{
-    aspect-ratio: .65;
+    aspect-ratio: .5;
     padding: 0;
     border-radius: 1rem;
     overflow: hidden;
@@ -1474,7 +1474,7 @@ html .pagina-inicial .slick-next.slick-arrow::before {
     }
 
     body.menu-open {
-        left: 80%;
+        left: 0%;
         position: relative;
         overflow: hidden;
     }
@@ -1861,8 +1861,12 @@ body #apx_widgets_worker-sideCartPro .tabela-carrinho .produto-info a{
     color: #000;
     line-height: initial;
 }
-body #apx_widgets_worker-sideCartPro .tabela-carrinho .produto-info ul > li:first-child{display: none;}
-
+body .disponibilidade-produto,
+body #apx_widgets_worker-sideCartPro .tabela-carrinho .produto-info ul > li:first-child{color: #04a34b;}
+body .disponibilidade-produto{
+  font-size: 14px;
+  margin: -10px 0 1rem 0;
+}
 body #apx_widgets_worker-sideCartPro #apx_widgets_worker-sideCartPro-content .table-body td:nth-child(3) *{
   color: #000;
   font-size: 14px;
@@ -2023,9 +2027,8 @@ body #apx_widgets_worker-sideCartPro #apx_widgets_worker-sideCartPro-header svg 
 .abas-custom > .tab-content{overflow: visible;}
 
 .logged-in-text{
-      font-size: 10px;
-    text-decoration: underline;
-    color: #000;
+font-size: 11px;
+    color: var(--primary);
 }
 
 .mRodape .fa-truck:before{
@@ -2115,4 +2118,59 @@ body #apx_widgets_worker-sideCartPro #apx_widgets_worker-sideCartPro-header svg 
   .purpose-circles .span3 {
     width: 100%;
   }
+}
+.listagem-item.produto-adicionado .bandeiras-produto{
+  top: .5rem;
+    left: calc(.5rem + 15px);
+}
+body .listagem-item.produto-adicionado .bandeiras-produto .adicionado-carrinho{
+  background: var(--primary);
+    border: 0;
+    box-shadow: 0px 0px 0px;
+    padding: .25rem 1rem;
+    border-radius: .75rem;
+}
+
+@media(max-width: 768px) {
+  body .listagem-item.produto-adicionado .bandeiras-produto .adicionado-carrinho {
+    padding: .25rem .5rem;
+    border-radius: .5rem;  
+  }
+
+  body .listagem-item.produto-adicionado .bandeiras-produto .adicionado-carrinho{
+    
+    font-size: 0;
+    line-height: initial;
+  }
+  body .listagem-item.produto-adicionado .bandeiras-produto .adicionado-carrinho:after{
+    content: "Adicionado";
+    font-size:10px;
+  }
+}
+.menu.superior .nivel-dois a{
+  font-size: 14px;
+}
+.menu.lateral .nivel-um > li > .nivel-dois > li:hover > a,
+.menu.lateral .nivel-um > li > .nivel-dois > li:hover > a *{
+  background:var(--primary);
+  color:#fff
+}
+
+.menu.lateral .nivel-um > li > .nivel-dois .nivel-tres{overflow:hidden}
+.menu.lateral .nivel-um > li > .nivel-dois .nivel-tres li:hover,
+.menu.lateral .nivel-um > li > .nivel-dois .nivel-tres li:hover *{
+  background:var(--primary);
+  color:#fff
+}
+
+.carrinho-checkout #cabecalho > div > div > .span6{
+  display: none;
+}
+
+.carrinho-checkout #cabecalho > div > div > .span3{
+  width: 100%;
+}
+.carrinho-checkout #cabecalho > div > div > .span3 .logo img{
+  margin-left: auto;
+  margin-right: auto;
 }

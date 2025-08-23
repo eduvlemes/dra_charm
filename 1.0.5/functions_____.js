@@ -129,6 +129,12 @@ theme.build.footer = function() {
 }
 
 theme.build.productPage = function() {
+    $('.disponibilidade-produto').each(function(){
+        let txt  = $(this).text();
+        if(txt.includes('Disponível')){
+            $(this).html('Produto com <strong>envio imediato</strong>')
+        }
+    })
     $(`<div id="apx-actions"></div>`).insertAfter(`.produto-compartilhar`);
     $(`.lista-favoritos`).appendTo(`#apx-actions`);
     $(`.lista-favoritos`).html(`<i class="fa fa-heart"></i>Adicionar aos favoritos`);
