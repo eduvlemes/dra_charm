@@ -1861,9 +1861,9 @@ body #apx_widgets_worker-sideCartPro .tabela-carrinho .produto-info a{
     color: #000;
     line-height: initial;
 }
-body .disponibilidade-produto,
+body .produto .acoes-produto .comprar .disponibilidade-produto,
 body #apx_widgets_worker-sideCartPro .tabela-carrinho .produto-info ul > li:first-child{color: #04a34b;}
-body .disponibilidade-produto{
+body .produto .acoes-produto .comprar .disponibilidade-produto{
   font-size: 14px;
   margin: -10px 0 1rem 0;
 }
