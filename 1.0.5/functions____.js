@@ -85,6 +85,7 @@ theme.build.footer = function() {
   $(`.links-rodape`).toggleClass(`span4 span6`);
   $(`.links-rodape + .span3`).toggleClass(`span3 span6`);
   $(`.links-rodape-paginas`).toggleClass(`links-rodape-paginas links-rodape-paginas_`);
+  $(`.links-rodape`).toggleClass(`links-rodape links-rodape_`);
   $(`.redes-sociais .titulo`).text(`Visite nossas redes sociais`);
   $(`#rodape .lista-redes a`).each(function() {
     const icon = $(this).find('i');
