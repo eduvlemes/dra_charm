@@ -1844,11 +1844,11 @@ body #apx_widgets_worker-sideCartPro #apx_widgets_worker-sideCartPro-footer a{
 }
 
 body #apx_frete.alertCustom span:not(.preencheAlert){
-  border-color:#71cc9a!important;
-  background-color:#ff3c6f!important;
+  border-color:#71ca9c!important;
+  background-color:#e69938!important;
 }
 body #apx_frete.alert.alert-success{
-  background-color:#71cc9a!important;
+  background-color:#71ca9c!important;
 }
 .carrinho>a span{
   display: none;
