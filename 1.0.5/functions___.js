@@ -84,7 +84,7 @@ theme.build.footer = function() {
 
   $(`.links-rodape`).toggleClass(`span4 span6`);
   $(`.links-rodape + .span3`).toggleClass(`span3 span6`);
-  $(`.links-rodape`).toggleClass(`links-rodape links-rodape_`);
+  $(`.links-rodape-paginas`).toggleClass(`links-rodape-paginas links-rodape-paginas_`);
   $(`.redes-sociais .titulo`).text(`Visite nossas redes sociais`);
   $(`#rodape .lista-redes a`).each(function() {
     const icon = $(this).find('i');
@@ -128,52 +128,52 @@ theme.build.footer = function() {
 }
 
 theme.build.productPage = function() {
-  $(`<div id="apx-actions"></div>`).insertAfter(`.produto-compartilhar`);
-  $(`.lista-favoritos`).appendTo(`#apx-actions`);
-  $(`.lista-favoritos`).html(`<i class="fa fa-heart"></i>Adicionar aos favoritos`);
- $(window).on('load', function() {
-    let attempts = 0;
-    const maxAttempts = 3;
-
-    const intervalId = setInterval(function() {
-        attempts++;
-
-        // Só adiciona o botão se ainda não existir
-        if ($('.botao-video.apx').length === 0 && $('.cn-divVideo').length > 0) {
-            $('<button type="button" onclick="$(\'.cn-span\').closest(\'a\').click()" class="botao-video apx"><i class="fa fa-youtube-play"></i>Ver vídeo do produto</button>')
-                .appendTo('#apx-actions');
-        }
-
-        // Para o intervalo após 3 tentativas
-        if (attempts >= maxAttempts) {
-            clearInterval(intervalId);
-        }
-    }, 1000); // 1 segundo
-});
-
-
-  $(`.principal .acoes-produto .desconto-a-vista`).each(function() {
-    const discountText = $(this).html().replace(`ou`,``);
-    $(this).html(discountText)
+    $(`<div id="apx-actions"></div>`).insertAfter(`.produto-compartilhar`);
+    $(`.lista-favoritos`).appendTo(`#apx-actions`);
+    $(`.lista-favoritos`).html(`<i class="fa fa-heart"></i>Adicionar aos favoritos`);
+    $(window).on('load', function() {
+      let attempts = 0;
+      const maxAttempts = 3;
+  
+      const intervalId = setInterval(function() {
+          attempts++;
+  
+          // Só adiciona o botão se ainda não existir
+          if ($('.produto-video').length > 0 && $(`.botao-video.apx`).length == 0) {
+              $('<button type="button" onclick="$(\'.produto-video .botao-video\').click()" class="botao-video apx"><i class="fa fa-youtube-play"></i>Ver vídeo do produto</button>')
+                  .appendTo('#apx-actions');
+          }
+  
+          // Para o intervalo após 3 tentativas
+          if (attempts >= maxAttempts) {
+              clearInterval(intervalId);
+          }
+      }, 1000); // 1 segundo
   });
-
-   $(`.principal .acoes-produto`).each(function() {
-    let promocinal = $(this).find(`.preco-promocional`);
-    promocinal.insertBefore($(this).find(`.preco-parcela`))
-  });
-
-  $(window).on('load', function() {
-    $(`.cep .alert-custom.alert-success`).wrap(`<div id="wrapTroque"></div>`);
-    $(`#wrapTroque`).prepend(`<img loading="lazy" class="svgTroqueCommerce" src="${theme.assetsPath}/troca_rosa.png" alt="A melhor plataforma de trocas e devoluções para Trocas" title="A melhor plataforma de trocas e devoluções para E-Commerce">`);
-  });
-  $(`.cep button`).text(`Calcular`);
-
-  $('.produto-thumbs img').each(function(){
-      let crop = $(this).attr('src').split('/')[3];
-      let removeCrop = $(this).attr('src').replace(crop,'150x150');
-      $(this).attr('src',removeCrop);
-  });
-};
+  
+  
+    $(`.principal .acoes-produto .desconto-a-vista`).each(function() {
+      const discountText = $(this).html().replace(`ou`,``);
+      $(this).html(discountText)
+    });
+  
+      $(`.principal .acoes-produto`).each(function() {
+      let promocinal = $(this).find(`.preco-promocional`);
+      promocinal.insertBefore($(this).find(`.preco-parcela`))
+    });
+  
+    $(window).on('load', function() {
+      $(`.cep .alert-custom.alert-success`).wrap(`<div id="wrapTroque"></div>`);
+      $(`#wrapTroque`).prepend(`<img loading="lazy" class="svgTroqueCommerce" src="${theme.assetsPath}/troca_rosa.png" alt="A melhor plataforma de trocas e devoluções para Trocas" title="A melhor plataforma de trocas e devoluções para E-Commerce">`);
+    });
+    $(`.cep button`).text(`Calcular`);
+  
+    $('.produto-thumbs img').each(function(){
+        let crop = $(this).attr('src').split('/')[3];
+        let removeCrop = $(this).attr('src').replace(crop,'150x150');
+        $(this).attr('src',removeCrop);
+    });
+  };
 
 theme.build.topBar = function(fundo, cor, html){
   $(`body`).prepend(`<div class="top-bar" style="background: ${fundo}; color: ${cor};">${html}</div>`);

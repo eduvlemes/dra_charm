@@ -543,9 +543,9 @@ body #rodape .institucional .lista-redes ul{
   margin-left: 1rem;
   font-size: 16px;
 }
-#rodape .links-rodape_ li a,
+#rodape .links-rodape li a,
 #rodape .lista-redes li a{transition: opacity .2s ease-in-out;}
-#rodape .links-rodape_ li:hover a,
+#rodape .links-rodape li:hover a,
 #rodape .lista-redes li:hover a{
   opacity: .6;
   text-decoration: none;
