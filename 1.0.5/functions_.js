@@ -97,6 +97,7 @@ theme.build.footer = function() {
     else if (network.includes('youtube')) name = 'YouTube';
     else if (network.includes('whatsapp')) name = 'WhatsApp';
     else if (network.includes('linkedin')) name = 'LinkedIn';
+    else if (network.includes('pinterest')) name = 'Pinterest';
     else name = 'Rede Social';
 
     if (!$(this).find('span').length) {
