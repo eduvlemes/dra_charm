@@ -72,6 +72,10 @@ theme.build.header = function() {
         
           $(`.apx_header .atalho-menu`).append(`<img class=logo src="${theme.assetsPath}/menu.png" alt="Dra Charm">`);
 
+           let topBarHeight_ = $(`.top-bar`).innerHeight();
+            let headerHeight_ = $(`#cabecalho`).innerHeight();
+            document.body.style.setProperty('--topbarHeight', `${topBarHeight_}px`); 
+            document.body.style.setProperty('--headerHeight', `${headerHeight_}px`); 
           if (isHomePage) {
             const onScroll = () => {
               const topBarHeight = $(`.top-bar`).innerHeight();
