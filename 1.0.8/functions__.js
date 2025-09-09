@@ -69,7 +69,7 @@ theme.build.header = function() {
           document.body.style.setProperty('--cart-icon', `url(${theme.assetsPath}/shopping-cart_7411136.png)`);  
   
         
-          $(`.apx_header .atalho-menu`).append(`<img src="https://cdn.awsli.com.br/1930/1930166/arquivos/person1-27.svg" alt="Menu">`);
+          $(`.apx_header .atalho-menu`).append(`<img src="https://cdn.awsli.com.br/1930/1930166/arquivos/menu.svg" alt="Menu">`);
 
            let topBarHeight_ = $(`.top-bar`).innerHeight();
             let headerHeight_ = $(`#cabecalho`).innerHeight();
