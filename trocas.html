@@ -1,0 +1,242 @@
+
+    <style>
+        /* Estilos específicos para a página de trocas */
+        .trocas-container {
+            font-family: 'Neulis', sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #000;
+        }
+
+        .header-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .icon-troca img {
+            height: 80px;
+        }
+
+        .titulo-principal {
+            font-family: 'Neulis', sans-serif;
+            font-weight: bold;
+            line-height: initial;
+            font-size: 24px;
+            margin-bottom: 10px;
+            margin: 1rem 0;
+        }
+
+        .subtitulo {
+            font-family: 'Neulis', sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .botao-solicitar {
+            background-color: var(--secondary);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            padding: 10px 25px;
+            font-family: 'Neulis', sans-serif;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-bottom: 20px;
+            margin: 1rem auto;
+            display: block;
+            width: fit-content;
+            transition: all .2s ease-in-out;
+            text-decoration: none;
+        }
+
+        .botao-solicitar:hover {
+            opacity: .7;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .texto-info {
+    font-size: 14px;
+    color: #000;
+    margin-top: 15px;
+    text-align: center;
+        }
+
+        .divisor {
+            width: 100%;
+            height: 8px;
+            background-color: var(--primary);
+            margin: 30px 0;
+        }
+
+        .section-titulo {
+            font-family: 'Neulis', sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+            margin: 30px 0 20px 0;
+            text-align: center;
+        }
+
+        .info-categoria {
+            margin-bottom: 30px;
+        }
+
+        .titulo-categoria {
+            font-family: 'Neulis', sans-serif;
+            font-weight: bold;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+        .info-texto{font-size: 16px;}
+        .info-texto {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+         .info-texto strong{
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .destaque {
+            color: var(--primary);
+            font-weight: 500;
+        }
+
+        .condicoes-lista {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .condicoes-lista li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+            font-size: 16px;
+        }
+
+        .condicoes-lista li:before {
+            content: "-";
+            position: absolute;
+            left: 0;
+            color: #666;
+        }
+
+        .whatsapp-link {
+            color: var(--secondary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .whatsapp-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="trocas-container">
+        <!-- Seção do cabeçalho -->
+        <div class="header-section">
+            <div class="icon-troca">
+                <img src="https://cdn.jsdelivr.net/gh/eduvlemes/dra_charm/assets/troca_rosa.png" alt="Ícone de Troca" >
+            </div>
+            <h2 class="titulo-principal">Acesse nosso Sistema de Trocas <br>e faça suas solicitações!</h2>
+           
+            <a href="https://dracharm.troque.app.br/" target=_blank class="botao-solicitar">Clique aqui e faça sua solicitação</a>
+            <p class="texto-info">
+                Queremos que você fique satisfeita! Nossa política de trocas e devoluções<br>
+                é simples e segue o Código de Defesa do Consumidor.
+            </p>
+        </div>
+
+        <div class="divisor"></div>
+
+        <!-- Seção de Informações -->
+        <h2 class="section-titulo">Informações Importantes</h2>
+
+        <!-- Seção de Troca -->
+        <div class="info-categoria">
+            <h3 class="titulo-categoria">TROCA</h3>
+            
+            <p class="info-texto">
+                Para solicitar uma troca, entre em contato pelo <span class="destaque">WhatsApp (85) 98201-5980</span> ou cadastre sua solicitação em 
+                <a href="dracharm.troca.app.br" class="destaque whatsapp-link">dracharm.troca.app.br</a>. 
+                Informe seus dados, número do pedido e o motivo da troca. O prazo para solicitação é de 7 dias corridos após o recebimento do produto. 
+                Após esse período, a troca fica sujeita à aprovação da DRA. CHARM.
+            </p>
+
+            <p class="info-texto"><strong>Condições para Troca:</strong></p>
+            <ul class="condicoes-lista">
+                <li>O produto deve estar novo, sem sinais de uso ou lavagem.</li>
+                <li>A etiqueta deve estar intacta e fixada à peça.</li>
+                <li>Peças personalizadas (bordadas) não podem ser trocadas.</li>
+                <li>A troca será feita por um vale compras no valor pago, incluindo o frete na modalidade econômica. O cupom será enviado por e-mail para que você possa refazer seu pedido.</li>
+            </ul>
+
+            <p class="info-texto"><strong>Importante:</strong></p>
+            <ul class="condicoes-lista">
+                <li>Não aceitamos produtos com odores, sinais de uso, modificações ou sem etiqueta.</li>
+                <li>O frete da primeira troca é por nossa conta, via código de postagem dos Correios ou troca simultânea com o entregador da transportadora. O método será informado por e-mail.</li>
+                <li>O prazo para processamento da troca e envio do vale compras é de de 5 dias úteis.</li>
+                <li>Segunda troca ou devolução da segunda troca não são permitidas.</li>
+                <li>Produtos personalizados não podem ser trocados, salvo em caso de defeito de fabricação.</li>
+            </ul>
+        </div>
+
+        <!-- Seção de Devolução -->
+        <div class="info-categoria">
+            <h3 class="titulo-categoria">DEVOLUÇÃO</h3>
+            
+            <p class="info-texto">
+                Para solicitar uma devolução, entre em contato pelo <span class="destaque">WhatsApp (85) 98201-5980</span> ou cadastre sua solicitação em 
+                <a href="dracharm.troca.app.br" class="destaque whatsapp-link">dracharm.troca.app.br</a>. 
+                Informe seus dados, número do pedido e o motivo da devolução. O prazo para solicitação é de 7 dias corridos após o recebimento do 
+                produto. Após esse período, a devolução fica sujeita à aprovação da DRA. CHARM.
+            </p>
+
+            <p class="info-texto"><strong>Condições para Devolução:</strong></p>
+            <ul class="condicoes-lista">
+                <li>O produto deve estar novo, sem odor, sinais de uso ou lavagem.</li>
+                <li>A etiqueta deve estar intacta e fixada à peça.</li>
+                <li>Peças personalizadas (bordadas) não podem ser devolvidas.</li>
+                <li>Não aceitamos produtos com odores, sinais de uso, modificações ou sem etiqueta.</li>
+            </ul>
+
+            <p class="info-texto"><strong>Reembolso:</strong></p>
+            <ul class="condicoes-lista">
+                <li>Após o recebimento e análise do produto pelo nosso Controle de Qualidade, o reembolso será processado em até 10 dias úteis. O valor será estornado no cartão de crédito conforme a operadora ou via PIX indicado pelo cliente.</li>
+            </ul>
+
+            <p class="info-texto">
+                <em>A devolução por arrependimento (art. 49 do Código de Defesa do Consumidor) não se aplica a produtos personalizados, pois não podem ser revendidos.</em>
+            </p>
+        </div>
+
+        <!-- Seção de Vícios/Defeitos -->
+        <div class="info-categoria">
+            <h3 class="titulo-categoria">VÍCIOS E/OU DEFEITOS</h3>
+            
+            <p class="info-texto">
+                Se o produto apresentar vício ou defeito, o cliente tem até 30 dias após o recebimento para solicitar a troca ou devolução, desde que o 
+                problema não seja causado por uso ou armazenamento incorretos.
+            </p>
+        </div>
+
+        <!-- Seção de Reembolso -->
+        <div class="info-categoria">
+            <h3 class="titulo-categoria">REEMBOLSO</h3>
+            
+            <p class="info-texto">
+                O reembolso será feito por estorno no cartão de crédito ou depósito em conta bancária indicada pelo cliente, conforme análise de 
+                qualidade dos produtos devolvidos.
+            </p>
+
+            <ul class="condicoes-lista">
+                <li>Cartão de crédito: estorno em até 10 dias úteis após o recebimento da devolução, podendo levar até 60 dias para aparecer na fatura, conforme a operadora.</li>
+                <li>PIX ou boleto: reembolso em até 10 dias úteis após o recebimento da devolução.</li>
+                <li>A empresa poderá optar pelo depósito bancário, considerando possíveis prazos das operadoras de cartão.</li>
+            </ul>
+        </div>
+    </div>
