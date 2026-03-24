@@ -256,7 +256,7 @@ html body.pagina-carrinho.carrinho-checkout #finalizarCompra {
     font-weight: bold;
 }
 #exibirFormasEnvio{
-    position: absolute;
+    
     z-index: 2;
     right: 0;
     --primaryColor: var(--cor-principal)
@@ -952,7 +952,7 @@ body #formasPagamento.formas .li-box-payment-proxy-pagali-v2-pix-72 .forma-conte
         font-weight: var(--titleFontWeight);
         font-size: calc(var(--titleFontSize) * .8);
         height: auto;
-        border-radius: var(--borderRadius)!important;
+        
     }
     .pagina-carrinho .botao.principal.grande i{display:none;}
     .pagina-carrinho .possui-cupom .cupom-sucesso{text-align:left;margin:0;}
@@ -1090,7 +1090,16 @@ body #formasPagamento.formas .li-box-payment-proxy-pagali-v2-pix-72 .forma-conte
     
         font-size: 12px;
     }
-    
+
+    .formas div#pagamento76 .helper:after, .formas div#pagamento62 .helper:after{
+        font-size: 10px;
+        padding: 2px 4px;
+    }
+    html body.pagina-carrinho.carrinho-checkout input[type="text"], html body.pagina-carrinho.carrinho-checkout input[type="email"], html body.pagina-carrinho.carrinho-checkout input[type="password"], html body.pagina-carrinho.carrinho-checkout input[type="tel"], html body.pagina-carrinho.carrinho-checkout select{
+        height:44px
+    }
+    .pagina-carrinho.carrinho-checkout textarea{padding: 15px!important;}
+    .campos-pedido > .campos-pedido > .row-fluid:first-child{order:-9!important;top:auto!important}
 }
 .pagina-carrinho.carrinho-checkout .top-bar{display: none!important;}
  .apple-pay-unavailable + .li-box-payment-google-pay:not(.google-pay-unavailable){
@@ -1131,3 +1140,22 @@ html body.pagina-carrinho.carrinho-checkout .resumo-compra .produto-info ul{
     line-height: initial;
     font-size: 10px!important;
 }
+
+.dados-cadastro ul.caixa-info{
+        background: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    border: 1px solid #e5e7eb;
+}
+
+.endereco #enderecoPrincipal1{
+    height: auto!important;
+}
+.formEndereco-conteiner{
+    float: left;
+}
+#exibirFormasEnvio{position: relative;float: right;margin-top: 4px;}
+
+body.pagina-carrinho.carrinho-checkout div#formasEnvio .formas.envio .accordion-heading span.forma-conteiner{}
+body.pagina-carrinho.carrinho-checkout div#formasEnvio .formas.envio .accordion-heading span.forma-conteiner .helper{order: 1;}
+body.pagina-carrinho.carrinho-checkout div#formasEnvio .formas.envio .accordion-heading span.forma-conteiner .envio-nome{order:9}
