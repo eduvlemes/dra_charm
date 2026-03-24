@@ -1094,20 +1094,40 @@ body #formasPagamento.formas .li-box-payment-proxy-pagali-v2-pix-72 .forma-conte
 }
 .pagina-carrinho.carrinho-checkout .top-bar{display: none!important;}
  .apple-pay-unavailable + .li-box-payment-google-pay:not(.google-pay-unavailable){
-        flex: 0 0 100%!important;
-    }
+    flex: 0 0 100%!important;
+}
 
-    .lista-endereco.formas *{
-        box-sizing: border-box;
-    }
-    .lista-endereco.formas .accordion-heading > .radio-conteiner{
-        display: flex;
-    padding: 0;
-    }
-    .lista-endereco.formas .accordion-heading{
-        min-height: unset;
-        line-height: initial;
-        display: flex;
-        align-items: center;
-        padding: 0 10px;
-    }
+.lista-endereco.formas *{
+    box-sizing: border-box;
+}
+.lista-endereco.formas .accordion-heading > .radio-conteiner{
+    display: flex;
+padding: 0;
+}
+.lista-endereco.formas .accordion-heading{
+    min-height: unset;
+    line-height: initial;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+html body.pagina-carrinho.carrinho-checkout .resumo-compra .produto-info ul{
+    flex-wrap: wrap;
+}
+.personalizacoes-container *{font-size: 11px!important;}
+.personalizacoes-container{
+    flex: 0 0 100%;
+}
+.personalizacoes-container li{font-size: 0!important;}
+.personalizacoes-container li span{font-size: 9px;font-weight: bold;}
+.personalizacoes-container li strong{font-size: 10px!important;}
+.toggle-personalizacoes{
+    flex: 0 0 100%;
+    background: #a2a2a2;
+    border-radius: 5px;
+    padding: 4px 6px;
+    color: #fff!important;
+    line-height: initial;
+    font-size: 10px!important;
+}

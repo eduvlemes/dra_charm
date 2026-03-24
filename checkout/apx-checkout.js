@@ -247,6 +247,35 @@ theme.functions.checkoutPlaceholders = function(){
     setTimeout(checkFilledFields, 500);
     setTimeout(checkFilledFields, 1000);
 
+    // Toggle de personalizações nos itens do pedido
+    $('[data-produto-id]').each(function() {
+        const $td = $(this);
+        const $lisPers = $td.find('li').filter(function() {
+            return $(this).find('[style="text-transform: capitalize"]').length > 0;
+        });
+
+        if ($lisPers.length === 0) return;
+
+        const $btn = $('<button type="button" class="toggle-personalizacoes">Ver Personalizações</button>');
+        const $container = $('<li class="personalizacoes-container"><ul class="personalizacoes-lista"></ul></li>').hide();
+
+        $lisPers.each(function() {
+            $container.find('.personalizacoes-lista').append($(this).clone());
+        });
+        $lisPers.remove();
+
+        $btn.on('click', function() {
+            const isVisible = $container.is(':visible');
+            $container.toggle();
+            $(this).text(isVisible ? 'Ver Personalizações' : 'Fechar');
+        });
+
+        $td.find('.produto-info ul').append($btn);
+
+        $td.find('.produto-info ul').append($container);
+        
+    });
+
 }
 
 theme.functions['pagina-carrinho']();
