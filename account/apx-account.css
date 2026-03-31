@@ -1,0 +1,342 @@
+.apx_account{
+  background: #f5f5f5;
+}
+.apx_account .caixa-sombreada{
+
+}
+
+.apx_account #depoimentos{
+  display: none;
+}
+
+.pagina-login.apx_account #corpo{
+      min-height: 80vh;
+      padding: 3rem 0;
+    /* display: flex;
+    align-items: center; */
+}
+.apx_account .caixa-dados h3.titulo,
+.apx_account h1.titulo{
+    display: flex;
+    flex-direction: column;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.apx_account .caixa-dados h3.titulo small,
+.apx_account h1.titulo small{font-size: 14px;}
+.apx_account .caixa-sombreada legend.titulo i{display: none;}
+.apx_account .caixa-sombreada legend.titulo{
+    font-size: 20px;
+    font-weight: 600;
+    border: 0;
+    margin: 0 0 .5rem 0;
+    text-transform: uppercase;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.apx_account{}
+.apx_account .button-auth-google,
+.apx_account .social-login-google{
+      display: flex;
+    width: fit-content;
+    margin: 1rem auto 0 auto;
+}
+.apx_account .cadastro-logar .caixa-sombreada{
+  border: 0!important;
+  padding: 0!important;
+}
+.apx_account .control-group{
+  display: flex;
+  flex-direction: column;
+}
+.apx_account .recuperar-senha{
+      color: var(--cor-secundaria);
+    margin: 1rem auto 0rem auto;
+    display: block;
+    width: fit-content;
+}
+.apx_account .control-group .controls{
+  margin: 0;
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+.apx_account .cadastro-logar >  .ou{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    margin: 1rem 0 2rem auto;
+    font-size: 14px;
+    color: #a1a1a1;
+}
+.apx_account .cadastro-logar >  .ou:before,
+.apx_account .cadastro-logar >  .ou:after{
+  content: "";
+  
+  height: 1px;
+  background: #f2f2f2;
+  width: 100%;
+  display: block;
+}
+.apx_account .cadastro-logar [for="id_email"] + div > .botao{margin-top: .75rem;}
+.apx_account .cadastro-logar [for="id_email"] + div > *,
+.apx_account .control-group .controls > *{
+  width: 100%;
+  margin: 0;
+}
+.apx_account  form .botao.principal{
+      border-radius: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 0px 0px 0px;
+    background: var(--primary) !important;
+    font-size: 16px;
+    padding: 0.75rem 2rem;
+    box-sizing: border-box;
+    width: 100%;
+    border: 0;
+}
+.apx_account .control-group .controls > [class^="span"]{
+  width: 100%;
+}
+.apx_account .cadastro-logar > div{margin: 0;width: 100%;}
+.apx_account .cadastro-logar{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    background: #fff;
+    padding: 2rem;
+    box-sizing: border-box;
+    width: 400px;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 8px;
+}
+.apx_account input[type="text"], html .apx_account input[type="email"], html .apx_account input[type="password"], html .apx_account input[type="tel"], html .apx_account select{
+  border-radius: 4px !important;
+    border: 1px solid #dfdfdf !important;
+    box-shadow: 0px 0px 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+    height: 46px;
+}
+
+@media(max-width:990px){
+  .pagina-login.apx_account #corpo {
+    min-height: 80vh;
+    padding: 1rem;
+  }
+  .pagina-login.apx_account .titulo small {
+        display: block;
+    }
+    .apx_account h1.titulo{margin-bottom: 1rem;}
+}
+
+
+.apx_account{}
+.apx_account{}
+.apx_account .breadcrumbs{
+display: none;
+}
+.apx_account .abas-conta{
+  display: none;
+}
+.apx_account .breadcrumbs > ul > li > a,.apx_account  .breadcrumbs > ul > li > strong {
+
+    font-size: 14px;
+}
+.apx_account #corpo > .conteiner{
+      max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.apx_account .secao-principal{
+  display: flex;
+}
+.apx_account .secao-principal > *{margin: 0;}
+.apx_account .secao-principal > .span3{
+  width: 400px;
+  max-width: 100%;
+}
+.apx_account .caixa-sombreada.conta-menu{
+    border: 0 !important;
+    border-radius: 0;
+    height: 100%;
+    box-sizing: border-box;
+    border-right: 1px solid #e8e8e8!important;
+}
+.apx_account .secao-principal,
+.apx_account .secao-secundaria,
+.apx_account #corpo{margin-bottom: 0!important;}
+.apx_account .conta-menu .nome-usuario{
+  display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-weight: bold;
+    align-items: center;
+    border: 0;
+}
+.apx_account .conta-menu .nome-usuario i{
+      background: var(--cor-principal);
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.apx_account .secao-principal > .span9{    width: -webkit-fill-available;}
+
+.apx_account .abas-conteudo{
+  border:0;
+  box-shadow: 0px 0px 0px;
+  padding: 2rem;
+}
+
+.apx_account .caixa-dados{
+  border: 0;
+  padding: 0;
+}
+
+.apx_account .caixa-dados h3.titulo{
+  text-align: left;
+  border: 0;
+}
+
+.apx_account .caixa-dados fieldset{
+      background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #e8e8e8;
+    box-sizing: border-box;
+}
+
+.apx_account .caixa-dados .legend i{color: var(--cor-principal);}
+.apx_account .caixa-dados .legend{
+      display: flex;
+    gap: .5rem;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+.apx_account .caixa-dados .caixa-info{
+  padding: 0;
+  background: transparent;
+  border: 0;
+  margin-bottom: 2rem;
+}
+.apx_account .caixa-dados fieldset{margin-bottom: 1.5rem;}
+.apx_account .caixa-dados .caixa-info li{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    color: #000;
+    margin: 0;
+}
+
+.apx_account .caixa-dados .caixa-info li b{
+  color: #666;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin: 1rem 0 0 0;
+}
+
+.apx_account .span9 .botao:not(.principal) {
+    border-radius: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 0px 0px 0px;
+    font-size: 14px;
+    padding: 0.75rem 2rem;
+    box-sizing: border-box;
+    width: 100%;
+    background: transparent;
+    border: 1px solid #d1d1d1;
+    margin-bottom: .5rem;
+    color: #000;
+}
+.apx_account .caixa-dados .botao.principal{
+       border-radius: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 0px 0px 0px;
+    background: var(--primary) !important;
+    font-size: 16px;
+    padding: 0.75rem 2rem;
+    box-sizing: border-box;
+    width: 100%;
+    border: 0;
+    color: #fff;
+}
+
+.apx_account .conta-menu .menu-simples{}
+.apx_account .conta-menu .menu-simples li{}
+.apx_account .conta-menu .menu-simples li.divisor{
+  border-color: #f2f2f2;
+      margin: 10px 0;
+}
+.apx_account .conta-menu .menu-simples li a{
+  color: #6a6a6a;
+  font-size: 15px;
+  padding: .75rem 1rem;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+.apx_account .conta-menu .menu-simples li a i{
+  color: #6a6a6a;font-size: 18px;
+}
+.apx_account .conta-menu .menu-simples li:hover a{
+  background: var(--light);
+}
+.apx_account .conta-menu .menu-simples li:hover *{
+  color: var(--cor-principal);
+}
+
+.apx_account .conta-menu .menu-simples li:last-child *{
+  color: var(--cor-principal);
+}
+
+.apx_account form[action$="alterar_senha"] {
+  width: 500px;
+    max-width: 100%;
+}
+.apx_account form[action$="alterar_senha"] .control-group{
+
+}
+.apx_account form[action$="alterar_senha"] .control-group label{
+  width: fit-content;
+  font-weight: 600;
+}
+
+.apx_account form[action$="alterar_senha"] .acao-editar{
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+.apx_account form[action$="alterar_senha"] .acao-editar .span5{
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+.apx_account form[action$="alterar_senha"] .abas-conteudo{margin-bottom: 0;}
+.apx_account form[action$="alterar_senha"] .acao-editar .botao{
+  box-sizing: border-box;
+  margin: 0 0 .5rem 0;
+}
