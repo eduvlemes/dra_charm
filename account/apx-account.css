@@ -15,6 +15,7 @@
     /* display: flex;
     align-items: center; */
 }
+.apx_account.pagina-conta h3.titulo,
 .apx_account .caixa-dados h3.titulo,
 .apx_account h1.titulo{
     display: flex;
@@ -25,6 +26,7 @@
     text-align: center;
     margin-bottom: 2rem;
 }
+.apx_account.pagina-conta h3.titulo small,
 .apx_account .caixa-dados h3.titulo small,
 .apx_account h1.titulo small{font-size: 14px;}
 .apx_account .caixa-sombreada legend.titulo i{display: none;}
@@ -129,6 +131,7 @@
     box-sizing: border-box;
     font-size: 16px;
     height: 46px;
+    padding-left: 10px;
 }
 
 @media(max-width:990px){
@@ -210,7 +213,7 @@ display: none;
   border: 0;
   padding: 0;
 }
-
+.apx_account.pagina-conta h3.titulo,
 .apx_account .caixa-dados h3.titulo{
   text-align: left;
   border: 0;
@@ -236,6 +239,10 @@ display: none;
   padding: 0;
   background: transparent;
   border: 0;
+  
+}
+.apx_account .caixa-dados .caixa-info:not(:last-child){
+
   margin-bottom: 2rem;
 }
 .apx_account .caixa-dados fieldset{margin-bottom: 1.5rem;}
@@ -253,7 +260,8 @@ display: none;
   font-size: 12px;
   margin: 1rem 0 0 0;
 }
-
+.apx_account .span3 .botao:not(.principal),
+.apx_account .span4 .botao:not(.principal),
 .apx_account .span9 .botao:not(.principal) {
     border-radius: 40px;
     text-transform: uppercase;
@@ -268,6 +276,7 @@ display: none;
     margin-bottom: .5rem;
     color: #000;
 }
+.apx_account .acao-editar .botao.principal,
 .apx_account .caixa-dados .botao.principal{
        border-radius: 40px;
     text-transform: uppercase;
@@ -340,3 +349,301 @@ display: none;
   box-sizing: border-box;
   margin: 0 0 .5rem 0;
 }
+
+.apx_account  #formFiltroPedido .botao{
+  width: max-content;
+    background: #666;
+    color: #fff;
+    margin-bottom: 0;
+    border: 0;
+}
+
+.apx_account  #formFiltroPedido + div h4.titulo{
+    font-size: 16px;    
+    font-weight: 600;
+    color: #000;
+    margin: 2rem 0 1rem 0;
+}
+.apx_account .meus-pedidos .abas-conteudo > .caixa-dados:first-child{margin-bottom:3rem}
+.apx_account  #formFiltroPedido + div .caixa-sombreada{}
+.apx_account  #formFiltroPedido + div .caixa-sombreada table:last-child{margin: 0;}
+
+.apx_account.pagina-pedido h2.titulo{
+      display: flex;
+    flex-direction: column;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+}
+.apx_account.pagina-pedido .abas-conteudo > .caixa-dados:first-child > .row-fluid{
+  display: flex;
+  align-items: center;
+}
+.apx_account.pagina-pedido h2.titulo + .caixa-info{
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid #e8e8e8;
+    box-sizing: border-box;
+    width: fit-content;
+    max-width: unset;
+    margin: 0;
+}
+.apx_account.pagina-pedido #corpo > div > div.secao-principal.row-fluid.sem-coluna > div.conteudo.span9 > div > div:nth-child(1) > div:nth-child(3){
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.apx_account.pagina-pedido #corpo > div > div.secao-principal.row-fluid.sem-coluna > div.conteudo.span9 > div > div:nth-child(1) > div:nth-child(3) > .span6{
+  background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #e8e8e8;
+    box-sizing: border-box;
+}
+
+.apx_account table.table thead,
+.apx_account table.table thead tr,
+.apx_account table.table thead tr th{
+  border: 0;
+  background: #f5f5f5;
+  color: #000;
+}
+
+.apx_account table.table *{
+  border-color: #f5f5f5;
+}
+.apx_account.pagina-favorito-listar .apx-fav-grid + ul{
+  text-align: left!important;
+}
+.apx_account.pagina-favorito-listar .apx-fav-grid + ul > li:last-child{
+margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+}
+.apx_account.pagina-favorito-listar .apx-fav-grid + ul > li input{
+      text-align: left;
+    padding-left: 1rem;
+}
+.apx_account.pagina-favorito-listar .apx-fav-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.apx_account.pagina-favorito-listar .apx-fav-card {
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #e8e8e8;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.apx_account.pagina-favorito-listar .apx-fav-card__image {
+  display: block;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+.apx_account.pagina-favorito-listar .apx-fav-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.apx_account.pagina-favorito-listar .apx-fav-card__body {
+  padding: .75rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  flex: 1;
+}
+.apx_account.pagina-favorito-listar .apx-fav-card__name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  line-height: 1.3;
+}
+.apx_account.pagina-favorito-listar .apx-fav-card__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: .5rem;
+}
+.apx_account.pagina-favorito-listar .apx-fav-card__actions a {
+  font-size: 22px;
+  color: #666;
+}
+.apx_account.pagina-favorito-listar .apx-fav-card__actions a:first-child {
+  color: var(--cor-principal);
+}
+
+
+@media (max-width: 768px) {
+  .apx_account.pagina-favorito-listar .apx-fav-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+.apx_account.pagina-conta{}
+.apx_account.pagina-conta .formulario-editar-cliente > div > div >.caixa-sombreada{
+      background: transparent;
+    border: 0 !important;
+    padding: 2rem !important;
+        display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.apx_account.pagina-conta .formulario-editar-cliente > div > div >.caixa-sombreada .control-group *{
+  text-align: left;
+}
+
+.apx_account.pagina-conta .formulario-editar-cliente > div > div >.caixa-sombreada .control-group{
+      flex: 0 0 calc(33% - 1rem);
+    margin: 0;
+}
+.apx_account.pagina-cadastro  .acao-editar > .span3,
+.apx_account.pagina-conta-endereco .acao-editar > .span4,
+.apx_account.pagina-conta .formulario-editar-cliente .acao-editar > .span4{
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+    padding: 0 2rem 1rem 2rem;
+    box-sizing: border-box;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+}
+.apx_account.pagina-cadastro .acao-editar > .span3,
+.apx_account.pagina-conta-endereco .acao-editar > .span4{padding: 0;}
+.apx_account.pagina-cadastro .acao-editar > .span3 > *,
+.apx_account.pagina-conta-endereco .acao-editar > .span4 > *,
+.apx_account.pagina-conta .formulario-editar-cliente .acao-editar > .span4 > *{
+  width: fit-content;
+  margin: 0;
+}
+.apx_account.pagina-cadastro .control-group *,
+.apx_account.pagina-conta-endereco .control-group *{
+  text-align: left;
+}
+
+.apx_account.pagina-cadastro .cadastro,
+.apx_account.pagina-conta-endereco .cadastro{
+    width: 1200px;
+    margin: 2rem auto 1rem auto;
+    max-width: 100%;
+}
+@media(max-width:990px){
+  .apx_account.pagina-conta .formulario-editar-cliente > div > div >.caixa-sombreada .control-group{
+        flex: 0 0 100%;
+      margin: 0;
+  } 
+  .apx_account.pagina-cadastro .cadastro,
+  .apx_account.pagina-conta-endereco .cadastro{
+      padding: 0 1.5rem;
+      box-sizing: border-box;
+  }
+}
+
+.apx_account.pagina-conta-endereco.criar .cadastro{
+    width: 100%;
+    margin: 0!important;
+    padding: 2rem!important;
+}
+.apx_account.pagina-conta-endereco.criar h1{text-align: left;margin: 0 0 1rem 0;}
+@media(min-width:990px){
+  .apx_account.pagina-conta-endereco.criar #formCadastroCompleto fieldset{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  #formCadastroCompleto fieldset .control-group{
+    flex: 0 0 calc(50% - .5rem);
+    margin: 0;
+  }
+}
+.apx_account.pagina-conta-endereco.criar{}
+
+@media (max-width: 768px) {
+  /* Layout: empilha sidebar + conteúdo */
+  .apx_account .secao-principal {
+    flex-direction: column;
+  }
+  .apx_account .secao-principal > .span3 {
+    width: 100%;
+  }
+  .apx_account .caixa-sombreada.conta-menu {
+    border-right: 0 !important;
+    border-bottom: 1px solid #e8e8e8 !important;
+  }
+
+  /* Títulos */
+  .apx_account.pagina-conta h3.titulo,
+  .apx_account .caixa-dados h3.titulo,
+  .apx_account h1.titulo {
+    font-size: 20px;
+    margin-bottom: 1.25rem;
+  }
+  .apx_account.pagina-pedido h2.titulo {
+    font-size: 20px;
+  }
+  .apx_account .caixa-sombreada legend.titulo {
+    font-size: 16px;
+  }
+  .apx_account .caixa-dados .legend {
+    font-size: 14px;
+  }
+
+  /* Padding geral */
+  .apx_account .abas-conteudo {
+    padding: 1rem;
+  }
+  .apx_account .caixa-dados fieldset {
+    padding: 1rem;
+  }
+
+  /* Botões */
+  .apx_account .span3 .botao:not(.principal),
+  .apx_account .span4 .botao:not(.principal),
+  .apx_account .span9 .botao:not(.principal) {
+    font-size: 13px;
+    padding: 0.6rem 1.25rem;
+  }
+  
+  .apx_account .caixa-dados .botao.principal,
+  .apx_account form .botao.principal {
+    font-size: 15px;
+    padding: 0.65rem 1.5rem;
+  }
+
+  /* Ações de formulário: empilha e ocupa 100% */
+  .apx_account.pagina-cadastro .acao-editar > .span3,
+  .apx_account.pagina-conta-endereco .acao-editar > .span4,
+  .apx_account.pagina-conta .formulario-editar-cliente .acao-editar > .span4 {
+    padding: 0 1rem 1rem 1rem;
+    flex-direction: column;
+  }
+  .apx_account.pagina-cadastro .acao-editar > .span3 > *,
+  .apx_account.pagina-conta-endereco .acao-editar > .span4 > *,
+  .apx_account.pagina-conta .formulario-editar-cliente .acao-editar > .span4 > * {
+    width: 100%;
+  }
+
+  /* Alterar senha */
+  .apx_account form[action$="alterar_senha"] {
+    width: 100%;
+  }
+  .apx_account form[action$="alterar_senha"] .acao-editar {
+    padding: 0 1rem;
+  }
+}
+

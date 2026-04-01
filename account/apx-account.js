@@ -86,7 +86,7 @@ if (window.location.pathname.includes('/conta/')) {
       'icon-group':              'ph-users',
     };
 
-    document.querySelectorAll('[class]').forEach(function (el) {
+    document.querySelectorAll('#corpo [class]').forEach(function (el) {
       el.classList.forEach(function (cls) {
         if (iconMap[cls]) {
           el.classList.remove(cls);
@@ -125,5 +125,78 @@ if (window.location.pathname.includes('/conta/index')) {
     if (toMove && insertRef && insertRef.parentNode) {
       insertRef.parentNode.insertBefore(toMove, insertRef.nextSibling);
     }
+  });
+}
+
+if (window.location.pathname.includes('/listar_reduzido')) {
+  document.addEventListener('DOMContentLoaded', function () {
+    var el = document.querySelector('#corpo > div > div.secao-principal.row-fluid.sem-coluna > div.conteudo.span9 > div > div:nth-child(1) > div:nth-child(1) > div > span:nth-child(4)');
+    if (el) {
+      el.innerHTML = 'Envio rápido em até 1 dia útil.<br>Prazo contado após postagem. Consulte a <a href="/pagina/politica-de-envio.html">Política de Envio</a>';
+    }
+  });
+}
+
+if (window.location.pathname.includes('/conta/endereco/criar')) {
+  document.addEventListener('DOMContentLoaded', function () {
+    var acaoEditar = document.querySelector('.acao-editar');
+    var cadastro   = document.querySelector('.cadastro');
+    if (acaoEditar && cadastro) {
+      cadastro.appendChild(acaoEditar);
+    }
+  });
+}
+
+if (window.location.pathname.includes('/conta/favorito')) {
+  document.addEventListener('DOMContentLoaded', function () {
+    var table = document.querySelector('.pagina-favorito-listar table.table');
+    if (!table) return;
+
+    var grid = document.createElement('div');
+    grid.className = 'apx-fav-grid';
+
+    table.querySelectorAll('tbody tr').forEach(function (row) {
+      var cells = row.querySelectorAll('td');
+      if (cells.length < 4) return;
+
+      var imgLink  = cells[0].querySelector('a');
+      var img      = cells[0].querySelector('img');
+      var nameLink = cells[1].querySelector('a');
+      var buyLink  = cells[2].querySelector('a');
+      var removeLink = cells[3].querySelector('a');
+
+      var card = document.createElement('div');
+      card.className = 'apx-fav-card';
+
+      var imgAnchor = document.createElement('a');
+      imgAnchor.href = imgLink ? imgLink.href : '#';
+      imgAnchor.className = 'apx-fav-card__image';
+      if (img) {
+        var newImg = img.cloneNode(true);
+        newImg.src = newImg.src.replace('/64x64/', '/400x400/');
+        imgAnchor.appendChild(newImg);
+      }
+
+      var body = document.createElement('div');
+      body.className = 'apx-fav-card__body';
+
+      var name = document.createElement('a');
+      name.href = nameLink ? nameLink.href : '#';
+      name.className = 'apx-fav-card__name';
+      name.textContent = nameLink ? nameLink.textContent.trim() : '';
+
+      var actions = document.createElement('div');
+      actions.className = 'apx-fav-card__actions';
+      if (buyLink) actions.appendChild(buyLink.cloneNode(true));
+      if (removeLink) actions.appendChild(removeLink.cloneNode(true));
+
+      body.appendChild(name);
+      body.appendChild(actions);
+      card.appendChild(imgAnchor);
+      card.appendChild(body);
+      grid.appendChild(card);
+    });
+
+    table.parentNode.replaceChild(grid, table);
   });
 }
