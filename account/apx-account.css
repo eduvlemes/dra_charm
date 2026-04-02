@@ -837,7 +837,9 @@ body #apx_widgets_worker-sideCartPro .tabela-carrinho .quantidade input[type="te
   #apx_widgets_worker-sideCartPro #apx_widgets_worker-sideCartPro-content>.scroll{
     height: fit-content!important;
   }
-  #apx_widgets_worker-sideCartPro #apx_widgets_worker-sideCartPro-footer{
+  
+}
+#apx_widgets_worker-sideCartPro #apx_widgets_worker-sideCartPro-footer{
     position: relative!important;
   }
   body #apx_widgets_worker-sideCartPro #apx_widgets_worker-sideCartPro-content .table-footer{
@@ -849,8 +851,6 @@ body #apx_widgets_worker-sideCartPro .tabela-carrinho .quantidade input[type="te
     justify-content: space-between;
     padding: 0 1rem;
   }
-}
-
 .sideCart-visible #apx_widgets_worker-sideCartPro {
     
     z-index: 99999999999999999999999;
@@ -950,3 +950,34 @@ flex: 1;
     
     text-transform: initial;
 }
+#apx_widgets_worker-sideCartPro-content #apx_frete{margin: -1px -1px 0 -1px;}
+@media(max-width:990px){
+  body #apx_widgets_worker-sideCartPro #apx_widgets_worker-sideCartPro-content .table-body td:nth-child(4) .quantidade{
+      white-space: nowrap;
+    width: 80px !important;
+    max-width: unset;
+  }
+  body #apx_widgets_worker-sideCartPro .tabela-carrinho .quantidade input[type="text"] {
+    margin: 0;
+    width: 36px!important;
+    padding: 0;
+    font-size: 12px;
+}
+  body #apx_widgets_worker-sideCartPro .tabela-carrinho .produto-info *{
+    font-size: 11px;
+  }
+  body #apx_widgets_worker-sideCartPro #apx_widgets_worker-sideCartPro-content .table-body tr{margin-bottom: 0!important;}
+  #apx_widgets_worker-sideCartPro .apx-sideFunction {
+    padding: 5px 15px;
+}
+#apx_widgets_worker-sideCartPro #apx_widgets_worker-sideCartPro-content .table-footer tbody>tr.possui-cupom{
+  margin: -20px 0 0 0!important;
+}
+}
+
+
+#apx_widgets_worker-sideCartPro .table-footer tbody > tr.possui-cupom,
+#apx_widgets_worker-sideCartPro .table-footer tbody tr .form-horizontal{display:none!important}
+#theme_sideCart .cupom-sucesso > b.cor-secundaria{}
+#theme_sideCart .cupom-sucesso > .cupom-codigo{}
+#theme_sideCart .cupom-sucesso > a{}
