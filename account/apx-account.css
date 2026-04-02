@@ -15,9 +15,9 @@
     /* display: flex;
     align-items: center; */
 }
-.apx_account.pagina-conta h3.titulo,
-.apx_account .caixa-dados h3.titulo,
-.apx_account h1.titulo{
+.apx_account.pagina-conta #corpo h3.titulo,
+.apx_account  #corpo .caixa-dados h3.titulo,
+.apx_account #corpo h1.titulo{
     display: flex;
     flex-direction: column;
     font-size: 26px;
@@ -26,8 +26,8 @@
     text-align: center;
     margin-bottom: 2rem;
 }
-.apx_account.pagina-conta h3.titulo small,
-.apx_account .caixa-dados h3.titulo small,
+.apx_account.pagina-conta #corpo h3.titulo small,
+.apx_account #corpo .caixa-dados h3.titulo small,
 .apx_account h1.titulo small{font-size: 14px;}
 .apx_account .caixa-sombreada legend.titulo i{display: none;}
 .apx_account .caixa-sombreada legend.titulo{
@@ -42,27 +42,27 @@
 }
 
 .apx_account{}
-.apx_account .button-auth-google,
-.apx_account .social-login-google{
+.apx_account #corpo .button-auth-google,
+.apx_account #corpo .social-login-google{
       display: flex;
     width: fit-content;
     margin: 1rem auto 0 auto;
 }
-.apx_account .cadastro-logar .caixa-sombreada{
+.apx_account #corpo .cadastro-logar .caixa-sombreada{
   border: 0!important;
   padding: 0!important;
 }
-.apx_account .control-group{
+.apx_account #corpo .control-group{
   display: flex;
   flex-direction: column;
 }
-.apx_account .recuperar-senha{
+.apx_account #corpo .recuperar-senha{
       color: var(--cor-secundaria);
     margin: 1rem auto 0rem auto;
     display: block;
     width: fit-content;
 }
-.apx_account .control-group .controls{
+.apx_account #corpo .control-group .controls{
   margin: 0;
   width: 100%;
   flex-wrap: wrap;
@@ -70,7 +70,7 @@
   flex-direction: column;
   gap: .75rem;
 }
-.apx_account .cadastro-logar >  .ou{
+.apx_account #corpo .cadastro-logar >  .ou{
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -79,8 +79,8 @@
     font-size: 14px;
     color: #a1a1a1;
 }
-.apx_account .cadastro-logar >  .ou:before,
-.apx_account .cadastro-logar >  .ou:after{
+.apx_account #corpo .cadastro-logar >  .ou:before,
+.apx_account #corpo .cadastro-logar >  .ou:after{
   content: "";
   
   height: 1px;
@@ -88,13 +88,13 @@
   width: 100%;
   display: block;
 }
-.apx_account .cadastro-logar [for="id_email"] + div > .botao{margin-top: .75rem;}
-.apx_account .cadastro-logar [for="id_email"] + div > *,
-.apx_account .control-group .controls > *{
+.apx_account #corpo .cadastro-logar [for="id_email"] + div > .botao{margin-top: .75rem;}
+.apx_account #corpo .cadastro-logar [for="id_email"] + div > *,
+.apx_account #corpo .control-group .controls > *{
   width: 100%;
   margin: 0;
 }
-.apx_account  form .botao.principal{
+.apx_account #corpo form .botao.principal{
       border-radius: 40px;
     text-transform: uppercase;
     font-weight: bold;
@@ -106,11 +106,11 @@
     width: 100%;
     border: 0;
 }
-.apx_account .control-group .controls > [class^="span"]{
+.apx_account #corpo .control-group .controls > [class^="span"]{
   width: 100%;
 }
-.apx_account .cadastro-logar > div{margin: 0;width: 100%;}
-.apx_account .cadastro-logar{
+.apx_account #corpo .cadastro-logar > div{margin: 0;width: 100%;}
+.apx_account #corpo .cadastro-logar{
   display: flex;
     flex-direction: column;
     justify-content: center;
@@ -124,7 +124,7 @@
     max-width: 100%;
     border-radius: 8px;
 }
-.apx_account input[type="text"], html .apx_account input[type="email"], html .apx_account input[type="password"], html .apx_account input[type="tel"], html .apx_account select{
+.apx_account #corpo input[type="text"], .apx_account #corpo input[type="email"], .apx_account #corpo input[type="password"], .apx_account #corpo input[type="tel"], .apx_account #corpo select{
   border-radius: 4px !important;
     border: 1px solid #dfdfdf !important;
     box-shadow: 0px 0px 0px;
@@ -139,10 +139,10 @@
     min-height: 80vh;
     padding: 1rem;
   }
-  .pagina-login.apx_account .titulo small {
+  .pagina-login.apx_account #corpo .titulo small {
         display: block;
     }
-    .apx_account h1.titulo{margin-bottom: 1rem;}
+    .apx_account #corpo h1.titulo{margin-bottom: 1rem;}
 }
 
 
