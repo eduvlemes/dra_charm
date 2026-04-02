@@ -200,3 +200,12 @@ if (window.location.pathname.includes('/conta/favorito')) {
     table.parentNode.replaceChild(grid, table);
   });
 }
+(function () {
+  if (window.location.pathname.includes('/carrinho/index')) {
+    $(`.tabela-carrinho .imagem img`).each(function () {  
+      const src = $(this).attr('src');
+      $(this).attr('src', src.replace('/64x64/', '/400x400/'));
+    });
+    
+  }
+})();
